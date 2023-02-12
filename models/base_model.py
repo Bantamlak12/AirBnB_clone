@@ -19,6 +19,15 @@ class BaseModel:
         self.created_at = datetime.datetime.now()
         self.updated_at = datetime.datetime.now()
 
+        if kwargs:
+            for key, value in kwargs.items():
+                if key != '__class__':
+                    if key == 'created_at' or key == 'updated_at':
+                        n = datetime.datetime.now()
+                        key = n.strftime("%A, %B %d, %Y %I:%M:%S %p")
+                        setattr(self, key, value)
+                    setattr(self, key, value)
+
     def __str__(self):
         """should print: [<class name>] (<self.id>) <self.__dict__>"""
 
