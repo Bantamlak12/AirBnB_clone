@@ -2,6 +2,7 @@
 """Defines a module base_model"""
 import uuid
 import datetime
+import models
 
 
 class BaseModel:
@@ -27,6 +28,8 @@ class BaseModel:
                         key = n.strftime("%A, %B %d, %Y %I:%M:%S %p")
                         setattr(self, key, value)
                     setattr(self, key, value)
+        else:
+            models.storage.new(self)
 
     def __str__(self):
         """should print: [<class name>] (<self.id>) <self.__dict__>"""
@@ -38,6 +41,7 @@ class BaseModel:
             with the current datetime
         """
         self.updated_at = datetime.datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """ returns a dictionary containing all keys/values of
