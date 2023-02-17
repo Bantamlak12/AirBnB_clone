@@ -8,16 +8,18 @@ from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 
 
-classes = {
-        "BaseModel": BaseModel,
-        "User": User
-    }
-
-
 class HBNBCommand(cmd.Cmd):
     """Defines an interpreter"""
 
+
+    classes = {
+            "BaseModel": BaseModel,
+            "User": User
+        }
+
+
     prompt = '(hbnb) '
+
 
     def emptyline(self):
         """Doesn't execute an empty line + ENTER"""
@@ -40,19 +42,18 @@ class HBNBCommand(cmd.Cmd):
         print('Quit command to exit the program')
 
     def do_create(self, arg):
-        """ Creates a new instance of BaseModel, saves it
-            (to the JSON file) and prints the id
-        """
+        """Creates a new instance of BaseModel in JSON"""
+
+        args = arg.split()
         if not arg:
             print("** class name missing **")
-        elif arg in classes:
-            for key, value in classes.items():
-                if key == arg:
-                    new_instance = classes[key]()
-            storage.save()
-            print(new_instance.id)
         else:
-            print("** class doesn't exist **")
+            if len(args) == 1 and args[0] in self.classes:
+                new_instance = self.classes.get(args[0])()
+                print(new_instance.id)
+            else:
+                print("** class doesn't exist **")
+        storage.save()
 
     def do_show(self, arg):
         """ Prints the string representation of an instance
