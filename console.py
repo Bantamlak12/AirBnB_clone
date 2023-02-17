@@ -42,18 +42,19 @@ class HBNBCommand(cmd.Cmd):
         print('Quit command to exit the program')
 
     def do_create(self, arg):
-        """Creates a new instance of BaseModel in JSON"""
-
-        args = arg.split()
+        """ Creates a new instance of BaseModel, saves it
+            (to the JSON file) and prints the id
+        """
         if not arg:
             print("** class name missing **")
+        elif arg in self.classes:
+            for key, value in self.classes.items():
+                if key == arg:
+                    new_instance = self.classes[key]()
+            storage.save()
+            print(new_instance.id)
         else:
-            if len(args) == 1 and args[0] in self.classes:
-                new_instance = self.classes.get(args[0])()
-                print(new_instance.id)
-            else:
-                print("** class doesn't exist **")
-        storage.save()
+            print("** class doesn't exist **")
 
     def do_show(self, arg):
         """ Prints the string representation of an instance
@@ -62,7 +63,7 @@ class HBNBCommand(cmd.Cmd):
         args = arg.split(" ")
         if not arg:
             print("** class name missing **")
-        elif args[0] not in classes:
+        elif args[0] not in self.classes:
             print("** class doesn't exist **")
         elif len(args) >= 1:
             try:
@@ -85,7 +86,7 @@ class HBNBCommand(cmd.Cmd):
         args = arg.split(" ")
         if not arg:
             print("** class name missing **")
-        elif args[0] not in classes:
+        elif args[0] not in self.classes:
             print("** class doesn't exist **")
         elif len(args) >= 1:
             try:
@@ -110,7 +111,7 @@ class HBNBCommand(cmd.Cmd):
             for key, values in my_objects.items():
                 my_list.append(str(values))
             print(my_list)
-        elif args[0] not in classes:
+        elif args[0] not in self.classes:
             print("** class doesn't exist **")
         else:
             my_list = []
@@ -128,7 +129,7 @@ class HBNBCommand(cmd.Cmd):
         args = shlex.split(arg)
         if len(args) == 0:
             print("** class name missing **")
-        elif args[0] not in classes:
+        elif args[0] not in self.classes:
             print("** class doesn't exist **")
         elif len(args) == 1:
             print("** instance id missing **")
