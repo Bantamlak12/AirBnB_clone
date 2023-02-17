@@ -15,19 +15,17 @@ class BaseModel:
         Args:
             args: non-keyworded variable length argument.
             kwargs(key/value): key/value pair.
-        """
+	"""
+        tform = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid.uuid4())
         self.created_at = datetime.datetime.now()
         self.updated_at = datetime.datetime.now()
-
         if kwargs:
             for key, value in kwargs.items():
-                if key != '__class__':
-                    if key == 'created_at' or key == 'updated_at':
-                        n = datetime.datetime.now()
-                        key = n.strftime("%A, %B %d, %Y %I:%M:%S %p")
-                        setattr(self, key, value)
-                    setattr(self, key, value)
+                if key == "created_at" or key == "updated_at":
+                    self.__dict__[key] = datetime.datetime.strptime(value, tform)
+                else:
+                    self.__dict__[key] = value
         else:
             models.storage.new(self)
 
