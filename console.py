@@ -19,7 +19,12 @@ class HBNBCommand(cmd.Cmd):
 
     classes = {
             "BaseModel": BaseModel,
-            "User": User
+            "User": User,
+            "State": State,
+            "City": City,
+            "Amenity": Amenity,
+            "Place": Place,
+            "Review": Review
         }
 
 
@@ -156,5 +161,3 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
 
-if __name__ == "__main__":
-    HBNBCommand().cmdloop()
