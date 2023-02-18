@@ -5,18 +5,13 @@ from models.base_model import BaseModel
 
 class User(BaseModel):
     """ Defines a class User that inherits from BaseModel
-
         Public class attributes:
                     email: string - empty string
                     password: string - empty string
                     first_name: string - empty string
                     last_name: string - empty string
     """
-    email = ""
-    password = ""
-    first_name = ""
-    last_name = ""
-
-    def __init(self, *args, **kwargs):
-        """Instantiation"""
-        super().__init(*args, **kwargs)
+    email: str = ""
+    password: str = ""
+    first_name: str = ""
+    last_name: str = ""
