@@ -16,7 +16,6 @@ from models.review import Review
 class HBNBCommand(cmd.Cmd):
     """Defines an interpreter"""
 
-
     classes = {
             "BaseModel": BaseModel,
             "User": User,
@@ -27,9 +26,7 @@ class HBNBCommand(cmd.Cmd):
             "Review": Review
         }
 
-
     prompt = '(hbnb) '
-
 
     def emptyline(self):
         """Doesn't execute an empty line + ENTER"""
@@ -159,5 +156,3 @@ class HBNBCommand(cmd.Cmd):
                     values.save()
             if flag == 0:
                 print("** no instance found **")
-
-
