@@ -9,6 +9,12 @@ This container manages different places
   float: left;
 }
 
+.container .places h2 {
+  font-size: 30px;
+  margin: 0;
+  margin-left: 30%;
+}
+
 .container .places .place1,
 .place2,
 .place3,
@@ -20,8 +26,7 @@ This container manages different places
   border-radius: 4px;
   float: left;
 }
-.container .places h2 {
-  font-size: 30px;
-  margin: 0;
-  margin-left: 30%;
+/* centering the thrird place */
+.container .place3 {
+  margin: 0 25%;
 }
