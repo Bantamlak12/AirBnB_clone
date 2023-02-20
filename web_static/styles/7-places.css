@@ -27,6 +27,6 @@ This container manages different places
   float: left;
 }
 /* centering the thrird place */
-.container .place3 {
+.container .places .place3 {
   margin: 0 25%;
 }
