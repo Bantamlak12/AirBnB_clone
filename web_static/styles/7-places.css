@@ -1,0 +1,27 @@
+/* 
+==============================================
+This container manages different places
+==============================================
+*/
+.container .places h1 {
+  font-size: 30px;
+  width: 100%;
+  float: left;
+}
+
+.container .places .place1,
+.place2,
+.place3,
+.place4 {
+  width: 390px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+  float: left;
+}
+.container .places h2 {
+  font-size: 30px;
+  margin: 0;
+  margin-left: 30%;
+}
