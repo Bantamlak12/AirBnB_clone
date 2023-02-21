@@ -1,5 +1,17 @@
 /* 
 ==============================================
+styling the whole body
+==============================================
+*/
+body {
+  margin: 0;
+  padding: 0;
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* 
+==============================================
 Filter container
 ==============================================
 */
@@ -75,7 +87,7 @@ Filter popover style
   border: 1px solid #dddddd;
   border-radius: 4px;
   padding-bottom: 20px;
-  margin-top: -4px;
+  margin-top: 20px;
   border-top-style: hidden;
   margin-right: -2px;
   padding-top: 1px;
@@ -92,9 +104,8 @@ Filter popover style
 /* style the margin of the heading of popover class */
 .filters .popover h2 {
   font-size: 18px;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-bottom: 0;
+  margin-top: 20px;
+  margin-left: 55px;
 }
 
 /* 
@@ -104,6 +115,6 @@ style the lists of the popover
 */
 .filters li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top: 15px;
 }

@@ -1,8 +1,4 @@
-/* 
-==============================================
-stlyle the whole body
-==============================================
-*/
+/* style the body */
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +6,7 @@ body {
   font-size: 14px;
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* style the place container */
+/* styles the places */
 .places {
   display: flex;
   flex-flow: row wrap;
@@ -74,4 +70,52 @@ body {
 
 footer {
   position: relative;
+}
+
+.places .amenities h2 {
+  margin-top: 40px;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+  margin-left: 3px;
+  padding-bottom: 7px;
+}
+
+.places .place1,
+.place2 .amenities ul {
+  padding-left: 5px;
+  margin-top: 30px;
+}
+
+.places .amenities li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.places .amenities i {
+  margin-right: 20px;
+}
+
+.places .reviews h2 {
+  margin-top: 40px;
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+  margin-left: 3px;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+
+.places .reviews h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.places .reviews ul {
+  list-style: none;
+}
+.places .reviews p {
+  font-size: 12px;
+  text-align: left;
+  margin-left: -11%;
+  margin-top: -5%;
+  line-height: 1.5;
 }

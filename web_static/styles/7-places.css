@@ -1,8 +1,16 @@
 /* 
 ==============================================
-This container manages different places
+styles the body and the class places
 ==============================================
 */
+body {
+  margin: 0;
+  padding: 0;
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .places {
   display: flex;
   flex-flow: row wrap;
