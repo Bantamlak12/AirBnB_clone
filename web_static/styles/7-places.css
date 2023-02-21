@@ -3,10 +3,16 @@
 This container manages different places
 ==============================================
 */
+.places {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .container .places h1 {
   font-size: 30px;
   width: 100%;
-  float: left;
+  margin-left: 2%;
 }
 
 .container .places h2 {
@@ -25,8 +31,4 @@ This container manages different places
   border: 1px solid #ff5a5f;
   border-radius: 4px;
   float: left;
-}
-/* centering the thrird place */
-.container .places .place3 {
-  margin: 0 25%;
 }

@@ -80,6 +80,7 @@ Filter popover style
   margin-right: -2px;
   padding-top: 1px;
   display: none;
+  position: relative;
 }
 
 /* display the block while hovering */
