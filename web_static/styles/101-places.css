@@ -1,0 +1,123 @@
+/* styling the body */
+body {
+  margin: 0;
+  padding: 0;
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* designs the title places(h1) */
+.places_header h1 {
+  font-size: 30px;
+  width: 100%;
+  margin-left: 2%;
+}
+/* wraps and centers the boxes */
+.places {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+/* designs all the three places */
+.places .place1,
+.place2,
+.place3 {
+  width: 390px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+}
+/* designs h2 of the boxes header */
+.places .place1 h2,
+.place2 h2,
+.place3 h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+/* designs the price logo */
+.price_by_night {
+  color: #ff5a5f;
+  border: 4px solid #ff5a5f;
+  border-radius: 50%;
+  min-width: 60px;
+  height: 60px;
+  font: 30px;
+  margin-top: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+/* designs the information box i.e max_guest */
+.information {
+  height: 80px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-top: 40px;
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.max_guest,
+.number_rooms,
+.number_bathrooms {
+  width: 100px;
+}
+/* adds a margin top above the titles amenities and reviews */
+.places .amenities,
+.reviews {
+  margin-top: 40px;
+}
+/* designs amenities header(h2) */
+.places .amenities h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 7px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+/* designs amenities unordered lists */
+.places .amenities ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* designs amenities icons */
+.places .amenities i {
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+/* designs reviews header(h2) */
+.places .reviews h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 7px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+/* designs reviewer's name(h3) */
+.places .reviews h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* designs the review paragraph */
+.places .reviews p {
+  font-size: 12px;
+  text-align: left;
+  margin-left: -11%;
+  margin-top: -5%;
+  line-height: 1.5;
+}
+/* adds position to footer */
+footer {
+  position: relative;
+}
