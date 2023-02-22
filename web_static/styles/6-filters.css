@@ -100,7 +100,11 @@ Filter popover style
 .filters .amenities:hover .popover {
   display: block;
 }
-
+/* background to location and amenities while hovering */
+.filters .location:hover,
+.filters .amenities:hover {
+  background-color: #fafafa;
+}
 /* style the margin of the heading of popover class */
 .filters .popover h2 {
   font-size: 18px;
