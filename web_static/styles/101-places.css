@@ -109,6 +109,10 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+/* removing bulletins */
+.places .reviews ul {
+  list-style: none;
+}
 /* designs the review paragraph */
 .places .reviews p {
   font-size: 12px;
