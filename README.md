@@ -1,4 +1,4 @@
-![logo](https://raw.githubusercontent.com/Haile-08/AirBnB_clone/master/images/logo.png)
+![logo](https://github.com/Bantamlak12/AirBnB_clone/blob/master/images/logo.png)
 <h1 align="center">AirBnB Clone</h1>
 
 ## Description of the project
