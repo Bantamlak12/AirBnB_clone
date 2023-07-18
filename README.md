@@ -12,9 +12,9 @@ The ALX-Holberton B&B sums up the implementation of my four months of studies at
 
 ## Final product
 
-![final1](https://raw.githubusercontent.com/Haile-08/AirBnB_clone/master/images/final1.png)
+![final1](https://github.com/Bantamlak12/AirBnB_clone/blob/master/images/final1.png)
 
-![final2](https://raw.githubusercontent.com/Haile-08/AirBnB_clone/master/images/final2.png)
+![final2](https://github.com/Bantamlak12/AirBnB_clone/blob/master/images/final2.png)
 
 ## Files and Directories
 
@@ -41,7 +41,7 @@ You will always use class attributes for any object. Why not instance attributes
 
 ## Data diagram
 
-![datagram](https://raw.githubusercontent.com/Haile-08/AirBnB_clone/master/images/datagram.jpg)
+![datagram](https://github.com/Bantamlak12/AirBnB_clone/blob/master/images/datagram.jpg)
 
 <h1 align="center">The console</h1>
 
@@ -55,7 +55,7 @@ This abstraction will also allow you to change the type of storage easily withou
 
 The console will be a tool to validate this storage engine
 
-![des](https://raw.githubusercontent.com/Haile-08/AirBnB_clone/master/images/des.png)
+![des](https://github.com/Bantamlak12/AirBnB_clone/blob/master/images/des.png)
 
 ## Background Context
 ### Welcome to the AirBnB clone project!
